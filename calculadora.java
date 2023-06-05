@@ -38,7 +38,7 @@ class calculadora{
             break;
 
             default:
-            System.out.println("Caracter Invalido por Favor digita Otro");
+            System.out.println("Caracter Invalido por Favor digita Otro ");
             break;
         }
         input.close();
