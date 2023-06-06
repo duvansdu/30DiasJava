@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "palindromo",
+            "request": "launch",
+            "mainClass": "palindromo",
+            "projectName": "30diasJava_b1092a3f"
+        },
+        {
+            "type": "java",
             "name": "conversorUnidades",
             "request": "launch",
             "mainClass": "conversorUnidades",
