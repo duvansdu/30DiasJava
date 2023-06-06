@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "adivinaNumero",
+            "request": "launch",
+            "mainClass": "adivinaNumero",
+            "projectName": "30diasJava_b1092a3f"
+        },
+        {
+            "type": "java",
             "name": "calculadora",
             "request": "launch",
             "mainClass": "calculadora",
