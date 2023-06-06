@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "conversorUnidades",
+            "request": "launch",
+            "mainClass": "conversorUnidades",
+            "projectName": "30diasJava_b1092a3f"
+        },
+        {
+            "type": "java",
             "name": "adivinaNumero",
             "request": "launch",
             "mainClass": "adivinaNumero",
