@@ -1,5 +1,13 @@
+/*Primero, se define un paquete llamado GestionBiblioteca.
+ Los paquetes son utilizados para organizar y agrupar clases relacionadas.*/
 package GestionBiblioteca;
 
+/*A continuación, se importan las clases y paquetes necesarios para el código, que incluyen: 
+java.io.BufferedReader, java.io.BufferedWriter,java.io.FileReader, java.io.FileWriter,
+ java.io.IOException, java.util.ArrayList y java.util.Scanner. 
+ Estas clases son utilizadas para manejar la entrada/salida de archivos, la lectura de datos,
+  el manejo de excepciones y la interacción con el usuario a través de la consola.
+ */
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileReader;
@@ -8,11 +16,22 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+
+/*Se define la clase ControladorLibros, que contiene todos los métodos y lógica para interactuar 
+con los libros de una biblioteca. Dentro de la clase ControladorLibros, se declaran algunas constantes 
+estáticas como NOMBRE_ARCHIVO,SEPARADOR_CAMPO y SEPARADOR_REGISTRO. Estas constantes se utilizan
+para definir el nombre del archivo en el que se guardarán los datos de los libros, 
+así como los separadores utilizados para delimitar los campos y registros en el archivo. */
 class ControladorLibros {
 
     private static final String NOMBRE_ARCHIVO = "libros.txt";
     private static final String SEPARADOR_CAMPO = ";";
     private static final String SEPARADOR_REGISTRO = "\n";
+
+    /*El método solicitarDatosParaRegistrar solicita al usuario que ingrese los datos
+     de un libro (código, título, autor, disponibilidad, localización y signatura)
+ a través de la consola. Luego, crea un nuevo objeto Libro con los datos ingresados y lo registra llamando 
+ al método registrar. */
 
     public static void solicitarDatosParaRegistrar() {
         Scanner sc = new Scanner(System.in);
@@ -49,6 +68,13 @@ class ControladorLibros {
 
     public static void guardarLibros(ArrayList<Libro> libros) {
         try {
+            //se crea un objeto BufferedWriter para escribir en el archivo. 
+
+            /*Se utiliza un FileWriter para especificar el archivo en el que se escribirá 
+            (utilizando la constante NOMBRE_ARCHIVO).
+            El segundo parámetro del FileWriter (true) indica que se agregará 
+            el contenido al final del archivo existente, en lugar de sobrescribirlo.*/ 
+        
             BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(NOMBRE_ARCHIVO, false));
             for (int x = 0; x < libros.size(); x++) {
                 Libro libro = libros.get(x);

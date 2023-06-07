@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ahorcado",
+            "request": "launch",
+            "mainClass": "dia7Ahorcado.ahorcado",
+            "projectName": "30diasJava_b1092a3f"
+        },
+        {
+            "type": "java",
             "name": "Biblioteca",
             "request": "launch",
             "mainClass": "GestionBiblioteca.Biblioteca",
