@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Biblioteca",
+            "request": "launch",
+            "mainClass": "GestionBiblioteca.Biblioteca",
+            "projectName": "30diasJava_b1092a3f"
+        },
+        {
+            "type": "java",
             "name": "palindromo",
             "request": "launch",
             "mainClass": "palindromo",
